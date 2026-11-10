@@ -2,7 +2,7 @@
 ---
 
 
-## [6.9.0](https://github.com/victorreversi/rea-save-node/compare/rea-agents-6.8.0...rea-agents-6.9.0) (2026-11-09)
+## [6.9.0](https://github.com/victorreversi/rea-save-node/compare/rea-agents-6.8.0...rea-agents-6.9.0) (2026-11-10)
 
 
 ### ⚠ BREAKING CHANGES
@@ -68,6 +68,7 @@
 
 ### Features
 
+* **analysis:** make resource budgets recoverable across CLI and MCP ([#9706](https://github.com/victorreversi/rea-save-node/issues/9706)) ([cb4e5cf](https://github.com/victorreversi/rea-save-node/commit/cb4e5cfbff25c2dda8683ef8598c17cec8a73473))
 * **android:** apply caller-selected R8 mapping evidence ([#7456](https://github.com/victorreversi/rea-save-node/issues/7456)) ([03f17cf](https://github.com/victorreversi/rea-save-node/commit/03f17cf41d3c844f9383d7792d9b1a14330d0bb2))
 * **android:** expose selected manifest component declarations ([#7379](https://github.com/victorreversi/rea-save-node/issues/7379)) ([7e8f7f6](https://github.com/victorreversi/rea-save-node/commit/7e8f7f6101593cc88cfc63795b47f21c742bee87))
 * **android:** link native declarations to static JNI candidates ([#7472](https://github.com/victorreversi/rea-save-node/issues/7472)) ([570abe9](https://github.com/victorreversi/rea-save-node/commit/570abe95f2a35b5c580a5ec2fca90c33d4114bdc))
@@ -102,6 +103,7 @@
 * **cli:** validate browser scenarios offline ([#7343](https://github.com/victorreversi/rea-save-node/issues/7343)) ([d109a39](https://github.com/victorreversi/rea-save-node/commit/d109a3910522db9927e4160f9b22669cb2cda0d4))
 * **contracts:** inventory offline OpenAPI operation declarations ([#9104](https://github.com/victorreversi/rea-save-node/issues/9104)) ([91d73a1](https://github.com/victorreversi/rea-save-node/commit/91d73a113e557aea6e23f454f4adca7579405391))
 * **debugger:** share GDB and Rizin session caps as REA_ settings ([#8056](https://github.com/victorreversi/rea-save-node/issues/8056)) ([4a8d8f7](https://github.com/victorreversi/rea-save-node/commit/4a8d8f72b354dc96a8d1bce06da4bf6c7eda33ec))
+* **desktop:** build several tasks from one capture, and measure each task's pass rate within a budget ([#9216](https://github.com/victorreversi/rea-save-node/issues/9216)) ([d2f9b8b](https://github.com/victorreversi/rea-save-node/commit/d2f9b8b7de6aeec86d0e818bf1d04cb43bbc22af))
 * **desktop:** capture and export apps installed from a downloaded .deb ([#8954](https://github.com/victorreversi/rea-save-node/issues/8954)) ([970969c](https://github.com/victorreversi/rea-save-node/commit/970969cb53f788976e64eae387076fcea104b603))
 * **desktop:** capture, draft, export and witness a task inside a build computer ([#9045](https://github.com/victorreversi/rea-save-node/issues/9045)) ([c5301e6](https://github.com/victorreversi/rea-save-node/commit/c5301e6145a9c8e06719f27e83da55af8e5480fc))
 * **desktop:** check apps whose files REA can't read, through the app's own headless mode or a screen judge ([#9217](https://github.com/victorreversi/rea-save-node/issues/9217)) ([fe2985a](https://github.com/victorreversi/rea-save-node/commit/fe2985a0b4c3b7210109690c1efeb099780983aa))
@@ -348,6 +350,7 @@
 * **certificates:** disclose undecoded unsigned attributes ([#7920](https://github.com/victorreversi/rea-save-node/issues/7920)) ([33d6975](https://github.com/victorreversi/rea-save-node/commit/33d697574928fa8ce225b094fea69a791ba4ee18))
 * **certificates:** unify OID decoding and validate reports ([79b8219](https://github.com/victorreversi/rea-save-node/commit/79b8219f290ef6304e469d9b8c40dc2af30edba9))
 * **changed-behavior:** withhold equality for unknowns and contradictions ([#7624](https://github.com/victorreversi/rea-save-node/issues/7624)) ([e109431](https://github.com/victorreversi/rea-save-node/commit/e1094313f504a2ed3611b3c18d31120bc4fe847b)), closes [#7384](https://github.com/victorreversi/rea-save-node/issues/7384) [#7383](https://github.com/victorreversi/rea-save-node/issues/7383)
+* **ci:** align desktop assertions and calibration entry points ([433fd94](https://github.com/victorreversi/rea-save-node/commit/433fd9486dbcd58dd1308ac435849e5ff97b701c))
 * **ci:** align static checks and regression fixtures with current contracts ([#7349](https://github.com/victorreversi/rea-save-node/issues/7349)) ([1201c25](https://github.com/victorreversi/rea-save-node/commit/1201c25542bc1e6233265fb220b334f81886550c))
 * **ci:** align tests with current evidence contracts ([ec34109](https://github.com/victorreversi/rea-save-node/commit/ec3410998b70290847f930538e57d0af0ac1bffb))
 * **ci:** await website worker tests and format Wrangler config ([9ebbe67](https://github.com/victorreversi/rea-save-node/commit/9ebbe67e05af08b567e215340da993c08dae378f))
@@ -364,6 +367,8 @@
 * **ci:** remove unused exports that fail deep static checks ([#8095](https://github.com/victorreversi/rea-save-node/issues/8095)) ([6b68fb6](https://github.com/victorreversi/rea-save-node/commit/6b68fb642a62f42e4e5359717e7f2f80b7938c63))
 * **ci:** repair native fixture and unused export ([429355c](https://github.com/victorreversi/rea-save-node/commit/429355ca4d1078579fca7d286de85c512bed0a96))
 * **ci:** repair verifier fixtures and formatting failures ([00c4f44](https://github.com/victorreversi/rea-save-node/commit/00c4f44a1c002f9801ee535386be60c30b23d20e))
+* **ci:** restore compilation and static checks on main ([8dfc47b](https://github.com/victorreversi/rea-save-node/commit/8dfc47b107afc0cf4b53322a10b94c666fe9e18b))
+* **ci:** restore main workflows and captured-state replay ([#9763](https://github.com/victorreversi/rea-save-node/issues/9763)) ([95ebd38](https://github.com/victorreversi/rea-save-node/commit/95ebd38d3faae013a7dbf85814efa30a5c6fcf56))
 * **ci:** restore qualification and reduce validation overhead ([6eb37a7](https://github.com/victorreversi/rea-save-node/commit/6eb37a774930b5b9edb137edd441e30652dfd394))
 * **ci:** reuse shared JavaScript AST child traversal ([afc1813](https://github.com/victorreversi/rea-save-node/commit/afc18131f4518783b7bf42ff7e81491639e5328d))
 * **ci:** validate static evidence through receipt owner ([af9bc3a](https://github.com/victorreversi/rea-save-node/commit/af9bc3ab5015da3734e79f16b550b4b28297356a))
@@ -410,6 +415,7 @@
 * **cli:** reject empty IPS and PE import targets before resolution ([#7963](https://github.com/victorreversi/rea-save-node/issues/7963)) ([4fbce5c](https://github.com/victorreversi/rea-save-node/commit/4fbce5c1225e5fba1905ee82c968b590283d0f93)), closes [#7421](https://github.com/victorreversi/rea-save-node/issues/7421)
 * **cli:** reject empty native and managed targets before resolution ([#7956](https://github.com/victorreversi/rea-save-node/issues/7956)) ([6db024d](https://github.com/victorreversi/rea-save-node/commit/6db024dc963abf90472346e5097e02e13a5b4ccd)), closes [#7436](https://github.com/victorreversi/rea-save-node/issues/7436) [#7404](https://github.com/victorreversi/rea-save-node/issues/7404)
 * **cli:** reject empty observation duration selections ([#7710](https://github.com/victorreversi/rea-save-node/issues/7710)) ([fbb0e79](https://github.com/victorreversi/rea-save-node/commit/fbb0e79354d8cc138026d01de393652913f821bf))
+* **cli:** reject invalid JavaScript application paths ([#9789](https://github.com/victorreversi/rea-save-node/issues/9789)) ([b2f3dc8](https://github.com/victorreversi/rea-save-node/commit/b2f3dc81fa503c2b9ff0d8625336ed2e74d1e829))
 * **cli:** reject malformed dry-run literals before changes ([#7870](https://github.com/victorreversi/rea-save-node/issues/7870)) ([48f5f30](https://github.com/victorreversi/rea-save-node/commit/48f5f30fd5536cb783c74c1a2df7c2003689dbd0))
 * **cli:** reject missing mcp add option values ([#7996](https://github.com/victorreversi/rea-save-node/issues/7996)) ([094ec5e](https://github.com/victorreversi/rea-save-node/commit/094ec5eb3fbdb0c99e0b1950c6412d037b8f4501))
 * **cli:** reject non-decimal Android overload index tokens ([#7493](https://github.com/victorreversi/rea-save-node/issues/7493)) ([bcc6775](https://github.com/victorreversi/rea-save-node/commit/bcc6775dc1c29c06a08798b73049d0bf506e6b55))
@@ -941,6 +947,7 @@
 * **pe:** reject malformed certificate name structures ([#9625](https://github.com/victorreversi/rea-save-node/issues/9625)) ([bdf7cc3](https://github.com/victorreversi/rea-save-node/commit/bdf7cc3b1e7c1325637808235f06990b7954fad3))
 * **pe:** reject malformed certificate validity times ([#8832](https://github.com/victorreversi/rea-save-node/issues/8832)) ([a97f827](https://github.com/victorreversi/rea-save-node/commit/a97f82746973613c77b6a93d0576b5383bfbb595))
 * **pe:** reject misaligned certificate table offsets ([#9276](https://github.com/victorreversi/rea-save-node/issues/9276)) ([8842092](https://github.com/victorreversi/rea-save-node/commit/88420926717121a018f717eb1eda08a6da31dfcb))
+* **pe:** reject misaligned certificate table offsets ([#9666](https://github.com/victorreversi/rea-save-node/issues/9666)) ([c52a9b9](https://github.com/victorreversi/rea-save-node/commit/c52a9b9d79021d4799c478d73a3fd3ed795b2318))
 * **pe:** reject non-MZ inputs before image inspection ([#7709](https://github.com/victorreversi/rea-save-node/issues/7709)) ([07dfd12](https://github.com/victorreversi/rea-save-node/commit/07dfd12613175af467ac86312a9d802b7ac36bac))
 * **pe:** reject surrogate code units in BMPString names ([#7817](https://github.com/victorreversi/rea-save-node/issues/7817)) ([3a46047](https://github.com/victorreversi/rea-save-node/commit/3a46047aa787ab07ffa59fde88c88a13a2554390))
 * **pe:** report exhausted certificate decoder allowances as resource limits ([#7881](https://github.com/victorreversi/rea-save-node/issues/7881)) ([8c83886](https://github.com/victorreversi/rea-save-node/commit/8c83886891c1749db3442c7099f6a9dea8f26755))
@@ -1178,6 +1185,7 @@
 
 ### Performance Improvements
 
+* **ci:** compact merged test console output ([#9787](https://github.com/victorreversi/rea-save-node/issues/9787)) ([55b6d2c](https://github.com/victorreversi/rea-save-node/commit/55b6d2ca200649d433480f0aa45d8ac202436cae))
 * **eval:** measure MCP catalog usage through the real Codex harness ([#9035](https://github.com/victorreversi/rea-save-node/issues/9035)) ([8084916](https://github.com/victorreversi/rea-save-node/commit/80849168590dedcab49cfdb5d5b94749fc9e89fc))
 * **javascript:** cache callable result syntax by AST identity ([#7508](https://github.com/victorreversi/rea-save-node/issues/7508)) ([a95b83c](https://github.com/victorreversi/rea-save-node/commit/a95b83c2b06ef713664d6abb3d29c7c149a2ce01))
 * **javascript:** index member-effect paths for projected reads ([#8108](https://github.com/victorreversi/rea-save-node/issues/8108)) ([767f6af](https://github.com/victorreversi/rea-save-node/commit/767f6afc18f19687eef663a10e9a3983f6f9979e))
@@ -1367,6 +1375,7 @@
 * archive historical verification and release inventories ([#7519](https://github.com/victorreversi/rea-save-node/issues/7519)) ([269630f](https://github.com/victorreversi/rea-save-node/commit/269630f4e1c93e45e5d133fde370736133865a3c))
 * celebrate 400,000 GitHub stars 🎉 ([#7801](https://github.com/victorreversi/rea-save-node/issues/7801)) ([7b6d872](https://github.com/victorreversi/rea-save-node/commit/7b6d872a25f84772a49bcdc7ea392028b7328857))
 * **changelog:** repair historical release heading links ([#7707](https://github.com/victorreversi/rea-save-node/issues/7707)) ([b69d8c5](https://github.com/victorreversi/rea-save-node/commit/b69d8c54678f2c6f9217c1609a5e9d64880e5392))
+* clarify coordination for overlapping PR fixes ([#8931](https://github.com/victorreversi/rea-save-node/issues/8931)) ([d4a7c20](https://github.com/victorreversi/rea-save-node/commit/d4a7c20e04024dced5e5d2d70e6b250cbd56f364))
 * clarify publication recovery and Evidence ownership ([#9654](https://github.com/victorreversi/rea-save-node/issues/9654)) ([b1f473f](https://github.com/victorreversi/rea-save-node/commit/b1f473fcf88168ef8c40462c1c15bcde56c51693))
 * clarify recovery for valid lookup failures ([60c0cf9](https://github.com/victorreversi/rea-save-node/commit/60c0cf977a34c99afa7942466625aeba74969bdf))
 * clarify test audits and organize verification lanes ([0354145](https://github.com/victorreversi/rea-save-node/commit/0354145a2ad9844f87b602bd457ae3df9982e0d3))
@@ -1397,6 +1406,7 @@
 * **mcp:** clarify Ghidra edit lifetime on switches ([#8484](https://github.com/victorreversi/rea-save-node/issues/8484)) ([f3c2166](https://github.com/victorreversi/rea-save-node/commit/f3c21665d8b098933e1e57dbd605ad2aa3f0c1c4))
 * **mcp:** clarify residual unknown target scope ([#8547](https://github.com/victorreversi/rea-save-node/issues/8547)) ([18cc161](https://github.com/victorreversi/rea-save-node/commit/18cc16141c5c56b442bc13580c8c86220c3229dc))
 * **mcp:** clarify retained evidence view support ([#8480](https://github.com/victorreversi/rea-save-node/issues/8480)) ([ce45f92](https://github.com/victorreversi/rea-save-node/commit/ce45f92219e7a3df223f0120613f0c5a662bdc24))
+* **mcp:** clarify tool selection and recovery guidance ([#9817](https://github.com/victorreversi/rea-save-node/issues/9817)) ([a4da4e7](https://github.com/victorreversi/rea-save-node/commit/a4da4e72306a20d4b02aad3411c714031417f35d))
 * **mcp:** document native function analysis scope ([#8389](https://github.com/victorreversi/rea-save-node/issues/8389)) ([0ecf3a4](https://github.com/victorreversi/rea-save-node/commit/0ecf3a4cbfdc71242f6ef4635c91a8ce4e5ca049))
 * **mcp:** document verified FastMCP catalog recovery ([#9113](https://github.com/victorreversi/rea-save-node/issues/9113)) ([39827ec](https://github.com/victorreversi/rea-save-node/commit/39827ec7171a311cd5258ffb1ef953068aa84051))
 * **mcp:** explain PowerShell launch environment scope ([#8961](https://github.com/victorreversi/rea-save-node/issues/8961)) ([347dc9a](https://github.com/victorreversi/rea-save-node/commit/347dc9a32cb038c4a82cfe64d4109ad9d8e27da9))
@@ -1420,6 +1430,7 @@
 * **setup:** state the FreeBuff minimum release ([#7066](https://github.com/victorreversi/rea-save-node/issues/7066)) ([975900f](https://github.com/victorreversi/rea-save-node/commit/975900f56542fdff2bdafcd624038a261b0e9f21))
 * **skill:** clarify scenario pause deadlines ([#7961](https://github.com/victorreversi/rea-save-node/issues/7961)) ([bd37925](https://github.com/victorreversi/rea-save-node/commit/bd3792566d7817b2feb0246be1e5eb2cff16dbaf))
 * **skill:** route SPA passive capture through allowed_origins ([#7252](https://github.com/victorreversi/rea-save-node/issues/7252)) ([7570aab](https://github.com/victorreversi/rea-save-node/commit/7570aabd9d484c41738461253f66d793c4fc766e))
+* **skills:** add focused tool audit and agent trial guidance ([94ca4b6](https://github.com/victorreversi/rea-save-node/commit/94ca4b656aede76eda0ebac3af9aed42a27c21a5))
 * **testing:** explain npm launcher selection in PowerShell ([#8962](https://github.com/victorreversi/rea-save-node/issues/8962)) ([455d795](https://github.com/victorreversi/rea-save-node/commit/455d7953ec2d75795a4780e603f4dd9ee4457fae))
 * **tool-design:** audit agent workflow guidance ([#8439](https://github.com/victorreversi/rea-save-node/issues/8439)) ([65986d0](https://github.com/victorreversi/rea-save-node/commit/65986d0a0f355f47dda687ff5a26ab80c2579823))
 * **uninstall:** clarify malformed shared config retention ([#7507](https://github.com/victorreversi/rea-save-node/issues/7507)) ([6efb384](https://github.com/victorreversi/rea-save-node/commit/6efb384261ea462064d83b692a9524d1700c7124)), closes [#7320](https://github.com/victorreversi/rea-save-node/issues/7320)
@@ -1471,6 +1482,7 @@
 * **firmware:** pin the staging ceiling at the request boundary ([#7775](https://github.com/victorreversi/rea-save-node/issues/7775)) ([4671947](https://github.com/victorreversi/rea-save-node/commit/4671947c97bb661b3507b7691f57227a2757a44f))
 * focus diagnostics and evidence checks on behavior ([#9303](https://github.com/victorreversi/rea-save-node/issues/9303)) ([5044e20](https://github.com/victorreversi/rea-save-node/commit/5044e20171564d201d5fe49c18e2ea6f90c53010))
 * **gdb:** expect configurable stream truncation diagnostics ([#8965](https://github.com/victorreversi/rea-save-node/issues/8965)) ([ce07d35](https://github.com/victorreversi/rea-save-node/commit/ce07d358cdaa3d3f69711d71d1d9e03106b12dbe))
+* **ghidra:** assert projected limitations instead of a stale literal ([#9268](https://github.com/victorreversi/rea-save-node/issues/9268)) ([27edc5c](https://github.com/victorreversi/rea-save-node/commit/27edc5c83f8403766a197fc828ac4cafb071a636))
 * **ghidra:** check regex recovery at its owning boundary ([#8578](https://github.com/victorreversi/rea-save-node/issues/8578)) ([2be2d00](https://github.com/victorreversi/rea-save-node/commit/2be2d006b8d4f949dfc58c6952b04d5ba70bd9c0))
 * **ghidra:** check retained historical snapshot evidence ([#8381](https://github.com/victorreversi/rea-save-node/issues/8381)) ([0aaa582](https://github.com/victorreversi/rea-save-node/commit/0aaa5829777d34b988dec955d2a6a0a894e92be1))
 * **ghidra:** check structured snapshot profile mismatch ([#8536](https://github.com/victorreversi/rea-save-node/issues/8536)) ([15107aa](https://github.com/victorreversi/rea-save-node/commit/15107aa81b9add8feda8c5d9363413a2e98ea6fc))
